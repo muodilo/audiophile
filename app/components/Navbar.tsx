@@ -5,7 +5,7 @@ import { BsCart3 } from "react-icons/bs";
 
 const Navbar = () => {
   return (
-    <nav className='lg:px-52 md:px-16 px-5 bg-foreground text-white'>
+    <nav className='lg:px-52 px-5 bg-foreground text-white'>
         {/* desktop */}
         <div className=' border-b border-neutral-700 py-8 flex items-center justify-between '>
             <Logo/>

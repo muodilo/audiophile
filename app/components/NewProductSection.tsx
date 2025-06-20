@@ -5,7 +5,7 @@ const NewProductSection = () => {
   return (
     <div className="lg:px-52 px-5  pb-16  text-white bg-[#fafafa]">
       <div
-        className=" overflow-hidden lg:gap-16 lg:pb-0 pb-16 gap-5 bg-[#d87d4a] pt-16 rounded-lg grid lg:grid-cols-2"
+        className=" overflow-hidden lg:gap-16 bg-no-repeat object-  lg:pb-0 pb-16 gap-5 bg-[#d87d4a] pt-16 rounded-lg grid lg:grid-cols-2"
         style={{ backgroundImage: "url('/images/pattern-circles.svg')" }}
       >
         <div className=" lg:relative lg:flex items-center hidden justify-center">
@@ -20,7 +20,7 @@ const NewProductSection = () => {
         <div className="lg:hidden flex items-center justify-center">
             <Image
             width={200}
-            height={1000}
+            height={200}
             alt="New Product"
             src={"/images/image-speaker-zx9.png"}
             className=" "

@@ -6,7 +6,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 
 const Categories = () => {
   return (
-    <div className='grid grid-cols-3 bg-[#fafafa] gap-7 pb-25 pt-40 lg:px-52 md:px-16 px-5'>
+    <div className='grid grid-cols-3 bg-[#fafafa] gap-7 pb-25 pt-40 lg:px-52 px-5'>
 
         <div className='bg-[#f1f1f1] text-center  rounded-lg flex justify-center items-center relative'>
             <div className='pt-20 pb-7'>

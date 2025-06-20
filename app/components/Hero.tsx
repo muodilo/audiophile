@@ -7,7 +7,6 @@ export default function Hero() {
       <div className="" />
       <div className="lg:flex hidden items-center">
         <HeroText />
-
         <div className="flex justify-center w-full ">
           <Image
             width={1800}
