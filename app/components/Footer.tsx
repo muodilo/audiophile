@@ -28,7 +28,10 @@ const Footer = () => {
 
         <div className="grid md:grid-cols-2 grid-cols-1 text-neutral-600">
             <div>
-                <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</p>
+                <p>
+  Audiophile is an all in one stop to fulfill your audio needs. We&apos;re a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.
+</p>
+
             </div>
         </div>
       </div>
