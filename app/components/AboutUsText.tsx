@@ -1,5 +1,3 @@
-import React from 'react'
-
 const AboutUsText = () => {
   return (
     <div className="flex flex-col justify-center text-center lg:text-left">
