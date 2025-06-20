@@ -1,5 +1,8 @@
 import Logo from "./Logo";
 import Link from "next/link";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -12,27 +15,50 @@ const Footer = () => {
           <Logo />
           <ul className="text-white flex items-center lg:gap-10 gap-5">
             <li>
-              <Link className="text-sm" href={"/"}>HOME</Link>
+              <Link className="text-sm" href={"/"}>
+                HOME
+              </Link>
             </li>
             <li>
-              <Link className="text-sm" href={"/"}>HEADPHONES</Link>
+              <Link className="text-sm" href={"/"}>
+                HEADPHONES
+              </Link>
             </li>
             <li>
-              <Link className="text-sm" href={"/"}>SPEAKERS</Link>
+              <Link className="text-sm" href={"/"}>
+                SPEAKERS
+              </Link>
             </li>
             <li>
-              <Link className="text-sm" href={"/"}>EARPHONES</Link>
+              <Link className="text-sm" href={"/"}>
+                EARPHONES
+              </Link>
             </li>
           </ul>
         </div>
 
         <div className="grid md:grid-cols-2 grid-cols-1 text-neutral-600">
-            <div>
-                <p>
-  Audiophile is an all in one stop to fulfill your audio needs. We&apos;re a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.
-</p>
-
-            </div>
+          <div>
+            <p>
+              Audiophile is an all in one stop to fulfill your audio needs.
+              We&apos;re a small team of music lovers and sound specialists who
+              are devoted to helping you get the most out of personal audio.
+              Come and visit our demo facility - we&apos;re open 7 days a week.
+            </p>
+          </div>
+        </div>
+        <div className="text-white md:flex hidden items-center gap-5 justify-end">
+            <FaFacebookSquare className="text-2xl hover:text-[#d87d4a]"/>
+            <FaTwitter className="text-2xl hover:text-[#d87d4a]"/>
+            <FaInstagram className="text-2xl hover:text-[#d87d4a]"/>
+        </div>
+        <div className="flex items-center justify-between">
+            <p className="text-neutral-600 text-sm pt-5">Copyright 2021. All Rights Reserved</p>
+            <div className="text-white flex md:hidden items-center gap-5 justify-end">
+            <FaFacebookSquare className="text-2xl hover:text-[#d87d4a]"/>
+            <FaTwitter className="text-2xl hover:text-[#d87d4a]"/>
+            <FaInstagram className="text-2xl hover:text-[#d87d4a]"/>
+        </div>
         </div>
       </div>
     </div>
