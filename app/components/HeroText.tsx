@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroText = () => {
   return (
-    <div className="relative z-10 py-34 text-center lg:text-left animate-fade-in-slow animate-delay-Y00">
+    <div className="relative z-10 py-34 text-center lg:text-left animate-fade-in-slow animate-delay-500">
           <div className="lg:max-w-lg ">
             <p className="tracking-[0.6rem] text-neutral-400 font-bold text-sm mb-4">
               NEW PRODUCT

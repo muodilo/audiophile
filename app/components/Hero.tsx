@@ -10,8 +10,8 @@ export default function Hero() {
 
         <div className="flex justify-center w-full ">
           <Image
-            width={100}
-            height={100}
+            width={1800}
+            height={1000}
             alt="hero image"
             src={"/images/image-hero-croped.jpeg"}
             className="w-[550px] animate-fade-in-slow animate-delay-500"
