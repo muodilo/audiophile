@@ -10,7 +10,7 @@ const Categories = () => {
         <div className='bg-[#f1f1f1] text-center  rounded-lg flex justify-center items-center relative'>
             <div className='pt-20 pb-7'>
                 <h3 className='font-bold mb-3'>HEADPHONES</h3>
-                <Link href={'/'} className='flex items-center justify-center gap-1'>
+                <Link href={'/category/headphones'} className='flex items-center justify-center gap-1'>
                 <p className='hover:text-[#d87d4a] text-sm text-neutral-600'>SHOP</p>
                 <MdArrowForwardIos className='text-[#d87d4a]'/>
                 </Link>
@@ -22,7 +22,7 @@ const Categories = () => {
         <div className='bg-[#f1f1f1] text-center  rounded-lg flex justify-center items-center relative'>
             <div className='pt-20 pb-7'>
                 <h3 className='font-bold mb-3'>SPEAKERS</h3>
-                <Link href={'/'} className='flex items-center justify-center gap-1'>
+                <Link href={'/category/speakers'} className='flex items-center justify-center gap-1'>
                 <p className='hover:text-[#d87d4a] text-sm text-neutral-600'>SHOP</p>
                 <MdArrowForwardIos className='text-[#d87d4a]'/>
                 </Link>
@@ -34,7 +34,7 @@ const Categories = () => {
         <div className='bg-[#f1f1f1] text-center  rounded-lg flex justify-center items-center relative'>
             <div className='pt-20 pb-7'>
                 <h3 className='font-bold mb-3'>EARPHONES</h3>
-                <Link href={'/'} className='flex items-center justify-center gap-1'>
+                <Link href={'/category/earphones'} className='flex items-center justify-center gap-1'>
                 <p className='hover:text-[#d87d4a] text-sm text-neutral-600'>SHOP</p>
                 <MdArrowForwardIos className='text-[#d87d4a]'/>
                 </Link>
