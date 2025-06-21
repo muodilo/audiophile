@@ -13,13 +13,13 @@ const Navbar = () => {
                     <Link className='text-[#d87d4a]' href={'/'}>HOME</Link>
                 </li>
                 <li>
-                    <Link className='' href={'/'}>HEADPHONES</Link>
+                    <Link className='' href={'/category/headphones'}>HEADPHONES</Link>
                 </li>
                 <li>
-                    <Link className='' href={'/'}>SPEAKERS</Link>
+                    <Link className='' href={'/category/speakers'}>SPEAKERS</Link>
                 </li>
                 <li>
-                    <Link className='' href={'/'}>EARPHONES</Link>
+                    <Link className='' href={'/category/earphones'}>EARPHONES</Link>
                 </li>
             </ul>
             <div className='relative'>
