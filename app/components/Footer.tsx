@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="lg:px-52 px-5  bg-[#191919]">
+    <footer className="lg:px-52 px-5  bg-[#191919]">
       <div>
         <div className="bg-[#d87d4a] w-40 h-1"></div>
       </div>
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
