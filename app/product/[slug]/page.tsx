@@ -1,17 +1,16 @@
-import { getProductBySlug } from '@/lib/getProductBySlug';
-import { notFound } from 'next/navigation';
-import Image from 'next/image';
-import Link from 'next/link';
+import { getProductBySlug } from "@/lib/getProductBySlug";
+import { notFound } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
 
-type ProductPageProps = {
-  params: {
-    slug: string;
-  };
-};
+type Params = Promise<{ slug: string }>;
 
-export default async function ProductPage({ params }: ProductPageProps) {
-  const product = getProductBySlug(params.slug);
+export default async function ProductPage(
+  { params }: { params: Params }
+) {
+  const { slug } = await params;
 
+  const product = getProductBySlug(slug);
   if (!product) return notFound();
 
   return (
