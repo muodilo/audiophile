@@ -6,12 +6,14 @@ import Categories from '../../components/Categories';
 import AboutUsSection from '../../components/AboutUsSection';
 import AddToCartPanel from '../../components/AddToCartPanel';
 
-interface ProductPageProps {
-  params: { slug: string };
-}
+export default async function ProductPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
 
-export default async function ProductPage({ params }: ProductPageProps) {
-  const product = getProductBySlug(params.slug);
+  const product = getProductBySlug(slug);
   if (!product) return notFound();
 
   return (
