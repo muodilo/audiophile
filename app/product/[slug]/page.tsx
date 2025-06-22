@@ -6,14 +6,13 @@ import Categories from '../../components/Categories';
 import AboutUsSection from '../../components/AboutUsSection';
 import AddToCartPanel from '../../components/AddToCartPanel';
 
-
 interface ProductPageProps {
   params: { slug: string };
 }
 
-
 export default async function ProductPage({ params }: ProductPageProps) {
-  const product = getProductBySlug(params.slug);
+  const product = await getProductBySlug(params.slug); 
+
   if (!product) return notFound();
 
   return (
@@ -21,9 +20,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
       <div className="px-5 lg:px-52 py-12 space-y-10">
         <Link href={`/category/${product.category}`} className="text-gray-500">
           Back
-        </Link>      
-        <div className="grid grid-cols-3 md:grid-cols-2 gap-12 mt-5">
+        </Link>
 
+        <div className="grid grid-cols-3 md:grid-cols-2 gap-12 mt-5">
           <div className="flex items-center">
             <Image
               src={product.image.desktop}
@@ -51,7 +50,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
             />
           </div>
 
-         
           <div className="space-y-5 flex flex-col justify-center md:col-span-1 col-span-2">
             {product.new && (
               <p className="text-orange-500 tracking-widest text-sm uppercase">
