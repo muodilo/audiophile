@@ -28,7 +28,7 @@ const NewProductSection = () => {
         <div className="flex flex-col justify-center items-center lg:items-start">
           <h1 className="text-5xl font-bold tracking-widest">ZX9</h1>
           <h1 className="text-5xl font-bold tracking-widest">SPEAKERS</h1>
-          <p className="font-light px-16 lg:text-left text-center text-white/60 lg:pr-[110px] mb-7">
+          <p className="font-light lg:px-0 px-16 lg:text-left text-center text-white/60 lg:pr-[110px] mb-7">
             Upgrade to premium speakers that are phenomenally built to deliver
             truly remarkable sound.
           </p>
