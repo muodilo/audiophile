@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const FeaturedProduct = () => {
   return (
@@ -28,7 +29,7 @@ const FeaturedProduct = () => {
 
         <div className="absolute bottom-1/3 px-16 ">
           <h1 className="text-3xl font-bold mb-5">ZX7 SPEAKER</h1>
-          <button className="text-sm border px-5 py-2">SEE PRODUCT</button>
+          <Link href={'/product/zx7-speaker'} className="text-sm border hover:bg-black hover:text-white duration-200 px-5 py-2">SEE PRODUCT</Link>
         </div>
       </div>
       <div className="grid grid-cols-2 lg:gap-12 mb-7 gap-5">
@@ -44,7 +45,7 @@ const FeaturedProduct = () => {
         <div className=" rounded-lg gap-7 px-5  bg-[#f1f1f1] flex flex-col justify-center">
           <h1 className="text-3xl font-bold">YX1 EARPHONES</h1>
           <div>
-            <button className="text-sm border px-5 py-2">SEE PRODUCT</button>
+            <Link href={'product/yx1-earphones'} className="text-sm border px-5 py-2 hover:bg-black hover:text-white duration-200">SEE PRODUCT</Link>
           </div>
         </div>
       </div>

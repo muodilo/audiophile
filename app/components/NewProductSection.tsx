@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const NewProductSection = () => {
   return (
@@ -33,7 +34,12 @@ const NewProductSection = () => {
             truly remarkable sound.
           </p>
           <div>
-            <button className="bg-black text-sm px-5 py-2 font-bold">SEE PRODUCT</button>
+            <Link
+          href={`/product/zx9-speaker`}
+          className="inline-block mt-4 px-6 py-3 bg-[#000000] hover:bg-[#343434] duration-200 text-white font-semibold uppercase rounded "
+        >
+          SEE PRODUCT
+        </Link>
           </div>
         </div>
       </div>

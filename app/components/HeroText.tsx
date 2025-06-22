@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 const HeroText = () => {
   return (
@@ -19,9 +20,12 @@ const HeroText = () => {
             made for the passionate music enthusiast.
           </p>
 
-          <button className="bg-[#d87d4a] hover:bg-[#d87d4a]/90 px-6 py-3 font-semibold tracking-widest text-sm">
-            SEE PRODUCT
-          </button>
+          <Link
+          href={`/product/xx99-mark-two-headphones`}
+          className="inline-block mt-4 px-6 py-3 bg-[#d87d4a] hover:bg-[#fbaf85] text-white font-semibold uppercase rounded "
+        >
+          See Product
+        </Link>
         </div>
   )
 }
