@@ -11,8 +11,7 @@ interface ProductPageProps {
 }
 
 export default async function ProductPage({ params }: ProductPageProps) {
-  const product = await getProductBySlug(params.slug); 
-
+  const product = getProductBySlug(params.slug);
   if (!product) return notFound();
 
   return (
@@ -56,13 +55,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 New Product
               </p>
             )}
-
             <h1 className="md:text-5xl text-2xl font-bold uppercase">
               {product.name}
             </h1>
-
             <p className="text-gray-500">{product.description}</p>
-
             <p className="text-xl">
               $ {product.price.toLocaleString(undefined, { minimumFractionDigits: 0 })}
             </p>
@@ -74,9 +70,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
         <div className="grid md:grid-cols-3 md:gap-16 gap-7">
           <div className="md:col-span-2">
             <h2 className="text-2xl font-bold mb-5">FEATURES</h2>
-            <p className="text-neutral-500 whitespace-pre-line">
-              {product.features}
-            </p>
+            <p className="text-neutral-500 whitespace-pre-line">{product.features}</p>
           </div>
 
           <div className="flex lg:flex-col flex-row gap-5">
