@@ -48,7 +48,7 @@ export default function ProductCard({
         <p className="text-gray-500">{product.description}</p>
         <Link
           href={`/product/${product.slug}`}
-          className="inline-block mt-4 px-6 py-3 bg-orange-500 text-white font-semibold uppercase rounded hover:bg-orange-600"
+          className="inline-block mt-4 px-6 py-3 bg-[#d87d4a] hover:bg-[#fbaf85] text-white font-semibold uppercase rounded "
         >
           See Product
         </Link>

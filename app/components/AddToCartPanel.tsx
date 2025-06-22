@@ -47,7 +47,7 @@ export default function AddToCartPanel({ product }: { product: Product }) {
 
       <button
         onClick={handleAdd}
-        className="bg-amber-600 text-white px-6 py-2 hover:bg-amber-700 text-sm transition"
+        className="bg-[#d87d4a] hover:bg-[#fbaf85] text-white px-6 py-2 text-sm transition"
       >
         ADD TO CART
       </button>
