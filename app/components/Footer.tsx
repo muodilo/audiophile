@@ -20,17 +20,17 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link className="text-sm" href={"/"}>
+              <Link className="text-sm" href={"/category/headphones"}>
                 HEADPHONES
               </Link>
             </li>
             <li>
-              <Link className="text-sm" href={"/"}>
+              <Link className="text-sm" href={"/category/speakers"}>
                 SPEAKERS
               </Link>
             </li>
             <li>
-              <Link className="text-sm" href={"/"}>
+              <Link className="text-sm" href={"/category/earphones"}>
                 EARPHONES
               </Link>
             </li>
