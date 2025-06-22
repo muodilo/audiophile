@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import PageLoader from "./components/pageLoader";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const manrope = Manrope({
   subsets: ['latin']
@@ -26,6 +28,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <ToastContainer position="top-left" autoClose={3000} />
       </body>
     </html>
   );
